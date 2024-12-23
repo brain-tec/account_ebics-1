@@ -1,0 +1,12 @@
+# Do NOT update manually; changes here will be overwritten by Copier
+_commit: v3.1
+_src_path: https://picasso.noviat.com/ci/addons-repo-template.git
+ci_exclude_modules: account_asset
+customer_slug: Noviat_Generic
+odoo_enterprise: 1
+odoo_version: 18.0
+org_slug: Noviat
+repo_name: Modules dedicated to manage the EBICS protocol
+repo_slug: accounting-ebics
+repo_type: Customer/Generic Addons
+
