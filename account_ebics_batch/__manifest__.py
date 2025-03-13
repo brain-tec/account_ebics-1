@@ -6,7 +6,7 @@
     "version": "17.0.1.0.1",
     "license": "AGPL-3",
     "author": "Noviat",
-    "website": "https://www.noviat.com",
+    "website": "https://www.noviat.com/",
     "category": "Accounting & Finance",
     "summary": "EBICS Files automated import and processing",
     "depends": ["account_ebics"],
