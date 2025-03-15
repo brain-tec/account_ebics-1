@@ -171,8 +171,8 @@ class EbicsFile(models.Model):
             if raise_if_not_found:
                 raise UserError(
                     _(
-                        "The module to process the '%(ebics_format)s' format is not installed "
-                        "on your system. "
+                        "The module to process the '%(ebics_format)s' format is "
+                        "not installed on your system. "
                         "\nPlease install module '%(module)s'",
                         ebics_format=self.format_id.name,
                         module=module,
@@ -567,7 +567,7 @@ class EbicsFile(models.Model):
             "054": "Ntfctn",
         }
         camt_tag = variant_tags[camt_variant]
-        stmts = root[0].findall("ns:{}".format(camt_tag), ns)
+        stmts = root[0].findall(f"ns:{camt_tag}", ns)
         for i, stmt in enumerate(stmts):
             acc_number = sanitize_account_number(
                 stmt.xpath(
@@ -590,7 +590,7 @@ class EbicsFile(models.Model):
 
             root_new = deepcopy(root)
             entries = False
-            for j, el in enumerate(root_new[0].findall("ns:{}".format(camt_tag), ns)):
+            for j, el in enumerate(root_new[0].findall(f"ns:{camt_tag}", ns)):
                 if j != i:
                     el.getparent().remove(el)
                 else:
