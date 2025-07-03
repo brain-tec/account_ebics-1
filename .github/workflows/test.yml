@@ -46,7 +46,7 @@ jobs:
             name: test with Odoo Enterprise
             odoo_enterprise : 1
             exclude_modules : "account_asset"
-            makepot: true
+            makepot: "true"
     services:
       postgres:
         image: postgres:12.0
@@ -80,7 +80,11 @@ jobs:
           mkdir -p ${{ env.INSTALL_ADDONS_DIR }}/setup
           find $(realpath $ADDONS_DIR) $(realpath ${{ env.ADDITIONAL_ADDONS_DIR }}) -name __manifest__.py -exec sh -c 'ln -s "$(dirname "$0")" "${{ env.INSTALL_ADDONS_DIR }}"' {} \;
           find $(realpath $ADDONS_DIR) $(realpath ${{ env.ADDITIONAL_ADDONS_DIR }}) -iwholename '*/setup/*/setup.py' -exec sh -c 'ln -s "$(dirname "$0")" "${{ env.INSTALL_ADDONS_DIR }}/setup"' {} \;
+<<<<<<< before updating
           if [ -n ${{ matrix.exclude }} ]
+=======
+          if [ -n ${{ matrix.exclude}} ]
+>>>>>>> after updating
           then
             remove_excluded_modules ${{ env.INSTALL_ADDONS_DIR }} ${{ matrix.exclude }}
           fi
@@ -93,10 +97,10 @@ jobs:
         run: |
           echo "ADDONS_PATH=/opt/odoo/addons,${{ env.INSTALL_ADDONS_DIR }}" >> $GITHUB_ENV
       - name: Add addons to EXCLUDE PATH
-        if: ${{ env.EXCLUDE_MODULES }}
+        if: ${{ matrix.EXCLUDE_MODULES }}
         run: |
           echo "server_wide_modules = web,module_change_auto_install" >> ${ODOO_RC}
-          echo "modules_auto_install_disabled = $EXCLUDE_MODULES" >> ${ODOO_RC}
+          echo "ODOO_MODULES_AUTO_INSTALL_DISABLED=${{ matrix.EXCLUDE_MODULES }}" >> $GITHUB_ENV
       - name: Install addons and dependencies
         run: |
           (ADDONS_PATH=${ADDONS_PATH} ADDONS_DIR=${INSTALL_ADDONS_DIR} oca_install_addons)
