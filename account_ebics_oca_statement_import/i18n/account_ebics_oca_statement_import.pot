@@ -4,7 +4,7 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0+e\n"
+"Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,7 +16,6 @@ msgstr ""
 #. module: account_ebics_oca_statement_import
 #. odoo-python
 #: code:addons/account_ebics_oca_statement_import/wizards/account_statement_import.py:0
-#, python-format
 msgid "Error detected while processing and EBICS File"
 msgstr ""
 
@@ -28,21 +27,17 @@ msgstr ""
 #. module: account_ebics_oca_statement_import
 #. odoo-python
 #: code:addons/account_ebics_oca_statement_import/wizards/account_statement_import.py:0
-#, python-format
 msgid "Statement %(st_name)s dated %(date)s has already been imported."
 msgstr ""
 
 #. module: account_ebics_oca_statement_import
 #. odoo-python
 #: code:addons/account_ebics_oca_statement_import/wizards/account_statement_import.py:0
-#, python-format
 msgid "This file doesn't contain any statement."
 msgstr ""
 
 #. module: account_ebics_oca_statement_import
 #. odoo-python
 #: code:addons/account_ebics_oca_statement_import/wizards/account_statement_import.py:0
-#: code:addons/account_ebics_oca_statement_import/wizards/account_statement_import.py:0
-#, python-format
 msgid "This file doesn't contain any transaction."
 msgstr ""
