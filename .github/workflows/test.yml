@@ -80,11 +80,7 @@ jobs:
           mkdir -p ${{ env.INSTALL_ADDONS_DIR }}/setup
           find $(realpath $ADDONS_DIR) $(realpath ${{ env.ADDITIONAL_ADDONS_DIR }}) -name __manifest__.py -exec sh -c 'ln -s "$(dirname "$0")" "${{ env.INSTALL_ADDONS_DIR }}"' {} \;
           find $(realpath $ADDONS_DIR) $(realpath ${{ env.ADDITIONAL_ADDONS_DIR }}) -iwholename '*/setup/*/setup.py' -exec sh -c 'ln -s "$(dirname "$0")" "${{ env.INSTALL_ADDONS_DIR }}/setup"' {} \;
-<<<<<<< before updating
-          if [ -n ${{ matrix.exclude }} ]
-=======
           if [ -n ${{ matrix.exclude}} ]
->>>>>>> after updating
           then
             remove_excluded_modules ${{ env.INSTALL_ADDONS_DIR }} ${{ matrix.exclude }}
           fi
@@ -101,6 +97,9 @@ jobs:
         run: |
           echo "server_wide_modules = web,module_change_auto_install" >> ${ODOO_RC}
           echo "ODOO_MODULES_AUTO_INSTALL_DISABLED=${{ matrix.EXCLUDE_MODULES }}" >> $GITHUB_ENV
+      - name: Inject GitHub token for Noviat orgs in test-requirements.txt
+        run: |
+          sed -i -E "s#https://github.com/(Noviat-(Projects|Generic|ARP|Internal))#https://${{ secrets.PRIVATE_TOKEN }}@github.com/\1#g" test-requirements.txt
       - name: Install addons and dependencies
         run: |
           (ADDONS_PATH=${ADDONS_PATH} ADDONS_DIR=${INSTALL_ADDONS_DIR} oca_install_addons)
