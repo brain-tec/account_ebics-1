@@ -16,6 +16,7 @@ Available addons
 addon | version | maintainers | summary
 --- | --- | --- | ---
 [account_ebics](account_ebics/) | 19.0.1.0.0 |  | EBICS banking protocol
+[account_ebics_batch](account_ebics_batch/) | 19.0.1.0.0 |  | EBICS Files automated import and processing
 
 [//]: # (end addons)
 
