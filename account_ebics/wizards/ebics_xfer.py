@@ -236,8 +236,8 @@ class EbicsXfer(models.TransientModel):
             date_from = self.date_from and self.date_from.isoformat() or None
             date_to = self.date_to and self.date_to.isoformat() or None
             for df in download_formats:
+                success = False
                 try:
-                    success = False
                     if df.order_type == "BTD":
                         btf = BusinessTransactionFormat(
                             df.btf_service,
@@ -262,7 +262,8 @@ class EbicsXfer(models.TransientModel):
                                 }
                             }
                         data = client.download(df.order_type, params=params)
-                    ebics_files += self._handle_download_data(data, df)
+                    if not self.env.context.get("ebics_mark_as_downloaded"):
+                        ebics_files += self._handle_download_data(data, df)
                     success = True
                 except EbicsFunctionalError:
                     err_cnt += 1
@@ -321,7 +322,7 @@ class EbicsXfer(models.TransientModel):
                     )
                     tb = "".join(format_exception(*exc_info()))
                     self.note += f"\n{tb}"
-                else:
+                finally:
                     # mark received data so that it is not included in further
                     # downloads
                     trans_id = client.last_trans_id
