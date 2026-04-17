@@ -40,6 +40,11 @@ msgid "EBICS Upload"
 msgstr ""
 
 #. module: account_ebics_batch_payment
+#: model:ir.model.fields,field_description:account_ebics_batch_payment.field_account_batch_payment__hide_ebics_upload
+msgid "Hide Ebics Upload"
+msgstr ""
+
+#. module: account_ebics_batch_payment
 #: model:ir.model.fields,field_description:account_ebics_batch_payment.field_account_batch_payment__id
 msgid "ID"
 msgstr ""
