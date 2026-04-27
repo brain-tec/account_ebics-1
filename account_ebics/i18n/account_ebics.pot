@@ -796,8 +796,12 @@ msgstr ""
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_id
-#: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_ids
 msgid "Ebics Config"
+msgstr ""
+
+#. module: account_ebics
+#: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_ids
+msgid "Ebics Configs"
 msgstr ""
 
 #. module: account_ebics

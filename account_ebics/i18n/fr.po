@@ -532,8 +532,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_xfer.py:0
 msgid ""
-"EBICS Functional Error during download of File Format %(name)s (%"
-"(order_type)s):"
+"EBICS Functional Error during download of File Format %(name)s "
+"(%(order_type)s):"
 msgstr ""
 
 #. module: account_ebics
@@ -677,8 +677,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_xfer.py:0
 msgid ""
-"EBICS Technical Error during download of File Format %(name)s (%"
-"(order_type)s):"
+"EBICS Technical Error during download of File Format %(name)s "
+"(%(order_type)s):"
 msgstr ""
 
 #. module: account_ebics
@@ -730,8 +730,8 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_xfer.py:0
 msgid ""
-"EBICS Verification Error during download of File Format %(name)s (%"
-"(order_type)s):"
+"EBICS Verification Error during download of File Format %(name)s "
+"(%(order_type)s):"
 msgstr ""
 
 #. module: account_ebics
@@ -811,8 +811,12 @@ msgstr ""
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_id
-#: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_ids
 msgid "Ebics Config"
+msgstr ""
+
+#. module: account_ebics
+#: model:ir.model.fields,field_description:account_ebics.field_account_journal__ebics_config_ids
+msgid "Ebics Configs"
 msgstr ""
 
 #. module: account_ebics
