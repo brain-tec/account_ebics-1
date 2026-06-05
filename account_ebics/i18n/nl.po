@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: Odoo Server 18.0+e\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-31 23:13+0000\n"
-"PO-Revision-Date: 2026-04-15 21:03+0000\n"
+"PO-Revision-Date: 2026-06-05 12:54+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Dutch <https://translation.noviat.io/projects/noviat-generic-"
@@ -200,7 +200,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_change_passphrase_view_form
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_userid_view_form
 msgid "Change Passphrase"
-msgstr ""
+msgstr "Wachtwoordzin wijzigen"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_admin_order_view_form_result
@@ -363,18 +363,18 @@ msgstr ""
 #. module: account_ebics
 #: model:ir.model.fields.selection,name:account_ebics.selection__ebics_userid__transaction_rights__down
 msgid "Download Only"
-msgstr ""
+msgstr "Alleen downloaden"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_file__download_process_method
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_file_format__download_process_method
 msgid "Download Process Method"
-msgstr ""
+msgstr "Verwerkingsmethode voor downloaden"
 
 #. module: account_ebics
 #: model:ir.model.fields.selection,name:account_ebics.selection__ebics_userid__transaction_rights__both
 msgid "Download and Upload"
-msgstr ""
+msgstr "Downloaden en uploaden"
 
 #. module: account_ebics
 #: model:ir.model.fields.selection,name:account_ebics.selection__ebics_config__state__draft
@@ -894,7 +894,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Errors"
-msgstr ""
+msgstr "Fouten"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_admin_order_view_form
@@ -909,7 +909,7 @@ msgstr "Bestand"
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_file_view_search
 msgid "File Format"
-msgstr ""
+msgstr "Bestandsformaat"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_config_view_form
@@ -925,7 +925,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_admin_order__upload_data
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_xfer__upload_data
 msgid "File to Upload"
-msgstr ""
+msgstr "Te uploaden bestand"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_file__name
@@ -1027,7 +1027,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_change_passphrase.py:0
 msgid "Incorrect old passphrase."
-msgstr ""
+msgstr "Onjuiste oude wachtwoordzin."
 
 #. module: account_ebics
 #: model:ir.model.fields.selection,name:account_ebics.selection__ebics_userid__state__init
@@ -1043,7 +1043,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Invalid XML file."
-msgstr ""
+msgstr "Ongeldig XML-bestand."
 
 #. module: account_ebics
 #: model:ir.model,name:account_ebics.model_account_journal
@@ -1113,12 +1113,12 @@ msgstr "Naam"
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__new_pass
 msgid "New Passphrase"
-msgstr ""
+msgstr "Nieuwe wachtwoordzin"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__new_pass_check
 msgid "New Passphrase (verification)"
-msgstr ""
+msgstr "Nieuwe wachtwoordzin (verificatie)"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__new_sig_pass
@@ -1134,13 +1134,13 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_change_passphrase.py:0
 msgid "New passphrase equal to old passphrase."
-msgstr ""
+msgstr "Nieuwe wachtwoordzin gelijk aan oude wachtwoordzin."
 
 #. module: account_ebics
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_change_passphrase.py:0
 msgid "New passphrase verification error."
-msgstr ""
+msgstr "Verificatiefout van de nieuwe wachtwoordzin."
 
 #. module: account_ebics
 #. odoo-python
@@ -1171,6 +1171,7 @@ msgstr ""
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "No financial journal found for Account Number %(nbr)s, Currency %(cc)s"
 msgstr ""
+"Geen financieel dagboek gevonden voor rekeningnummer %(nbr)s, valuta %(cc)s"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__note
@@ -1198,7 +1199,7 @@ msgstr ""
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__old_pass
 msgid "Old Passphrase"
-msgstr ""
+msgstr "Oude wachtwoordzin"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_change_passphrase__old_sig_pass
@@ -1275,7 +1276,7 @@ msgstr ""
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_file_view_form
 msgid "Process"
-msgstr ""
+msgstr "Verwerken"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_file_view_form_result
@@ -1285,13 +1286,13 @@ msgstr ""
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_file__note_process
 msgid "Process Notes"
-msgstr ""
+msgstr "Verwerkingsnotities"
 
 #. module: account_ebics
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Process file %(fn)s results:"
-msgstr ""
+msgstr "Resultaten verwerking bestand %(fn)s:"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_file_view_form
@@ -1403,7 +1404,7 @@ msgstr ""
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_file_view_form
 msgid "Set to Done"
-msgstr ""
+msgstr "Op Klaar zetten"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_config_view_form
@@ -1465,19 +1466,19 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Statement %(st)s dated %(date)s (Company: %(cpy)s)"
-msgstr ""
+msgstr "Uittreksel %(st)s gedateerd %(date)s (Bedrijf: %(cpy)s)"
 
 #. module: account_ebics
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Statement %(st_name)s dated %(date)s has already been imported."
-msgstr ""
+msgstr "Uittreksel %(st_name)s gedateerd %(date)s is al geïmporteerd."
 
 #. module: account_ebics
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "Statement for Account Number %(nr)s has not been processed."
-msgstr ""
+msgstr "Uittreksel voor rekeningnummer %(nr)s is niet verwerkt."
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_admin_order__ebics_passphrase_store
@@ -1596,7 +1597,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "This file doesn't contain any transaction."
-msgstr ""
+msgstr "Dit bestand bevat geen enkele transactie."
 
 #. module: account_ebics
 #: model:ir.model.fields,help:account_ebics.field_ebics_userid__swift_3skey
@@ -1625,7 +1626,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/wizards/ebics_xfer.py:0
 msgid "Unknown Error"
-msgstr ""
+msgstr "Onbekende fout"
 
 #. module: account_ebics
 #. odoo-python
@@ -1655,7 +1656,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_xfer__upload_fname
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_xfer_view_form_upload
 msgid "Upload Filename"
-msgstr ""
+msgstr "Bestandsnaam upload"
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_admin_order__upload_format_ids
@@ -1666,7 +1667,7 @@ msgstr ""
 #. module: account_ebics
 #: model:ir.model.fields.selection,name:account_ebics.selection__ebics_userid__transaction_rights__up
 msgid "Upload Only"
-msgstr ""
+msgstr "Alleen uploaden"
 
 #. module: account_ebics
 #: model_terms:ir.ui.view,arch_db:account_ebics.ebics_userid_view_form
@@ -1686,6 +1687,8 @@ msgid ""
 "Use this parameter to limit the transactions for this User to downloads or "
 "uploads."
 msgstr ""
+"Gebruik deze parameter om de transacties voor deze gebruiker te beperken tot "
+"downloads of uploads."
 
 #. module: account_ebics
 #: model:ir.model.fields,field_description:account_ebics.field_ebics_file__user_id
@@ -1777,7 +1780,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account_ebics/models/ebics_file.py:0
 msgid "s have"
-msgstr ""
+msgstr "s hebben"
 
 #. module: account_ebics
 #. odoo-python
