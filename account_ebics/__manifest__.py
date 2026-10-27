@@ -7,7 +7,7 @@
         "Download bank statements and upload payment files directly from Odoo, "
         "using the European EBICS standard"
     ),
-    "version": "18.0.1.2.2",
+    "version": "18.0.1.3.0",
     "license": "LGPL-3",
     "author": "Noviat",
     "website": "https://www.noviat.com/",
@@ -26,7 +26,6 @@
         "wizards/ebics_admin_order.xml",
         "views/menu.xml",
     ],
-    "installable": True,
     "application": True,
     "external_dependencies": {
         "python": [
